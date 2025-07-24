@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이성훈 | 게시판 과제04</title>
+    <link
+      rel="stylesheet"
+      href="/front_homework/front/20250724_homework01/board/board.css"
+    />
+    <script
+      defer
+      src="/front_homework/front/20250724_homework01/board/board.js"
+    ></script>
+  </head>
+  <body>
+    <h1>20250724 RESTAPI복습v2 게시판</h1>
+    <div id="board-area">
+      <form action="">
+        <input type="text" id="board-title" placeholder="제목" />
+        <input type="text" id="board-content" placeholder="내용" />
+        <select id="category-type">
+          <option value="1">JAVA</option>
+          <option value="2">JS</option>
+          <option value="3">CSS</option>
+          <option value="4">HTML</option>
+          <option value="5">SQL</option>
+        </select>
+        <input type="submit" value="게시글 등록" onclick="insertBoard();" />
+      </form>
+      <div>
+        <input type="button" value="수정하기" onclick="updateBoard();" />
+        <input type="button" value="삭제하기" onclick="deleteBoard();" />
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div id="board-detail-panel">
+      <div id="board-detail">
+        <div>행을 클릭하면 상세가 여기에 표시됩니다.</div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div>
+      <table border="1px">
+        <thead>
+          <tr>
+            <th>게시글ID</th>
+            <th>제목</th>
+            <th>내용</th>
+            <th>카테고리</th>
+            <th>작성일</th>
+            <th>수정일</th>
+          </tr>
+        </thead>
+        <tbody id="board-list"></tbody>
+      </table>
+    </div>
+    <br />
+    <hr />
+    <br />
+  </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CINEMATE | 영화 추천 홈페이지</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div id="outer">
+        <header>
+            <div class="hd-logo">🎬</div>
+            <div id="header-logo-text">
+                <h1>CINEMATE</h1>
+                <p>_Gosoon's movie Pick!</p>
+            </div>
+            <div id="top-signin">
+                <a href="#" class="sign-in" id="login-btn">SIGN IN</a>
+            </div>
+        </header>
+
+        <nav id="nav-menu">
+            <a href="#" class="menu-name active" id="home-link">Home</a>
+            <a href="#" class="menu-name">Rec</a>
+            <a href="#" class="menu-name">New</a>
+            <a href="#" class="menu-name">Genre</a>
+            <a href="#" class="menu-name">Top</a>
+            <a href="#" class="menu-name">List</a>
+            <a href="#" class="menu-name">Contact</a>
+        </nav>
+
+        <main>
+            <aside>
+                <div class="aside-search">
+                    <h3>영화 DB</h3>
+                    <input type="text" id="search-input" placeholder="영화 제목 검색">
+                    <select id="genre-select">
+                        <option value="">장르 선택</option>
+                        <option value="액션">액션</option>
+                        <option value="코미디">코미디</option>
+                        <option value="드라마">드라마</option>
+                        <option value="SF">SF</option>
+                        <option value="로맨스">로맨스</option>
+                    </select>
+                    <button id="search-btn">검색</button>
+                </div>
+                <div class="aside-recommend">
+                    <h3>오늘의 Gosoon's Pick!!</h3>
+                    <p>"영화 제목" - 지금 바로 보기</p>
+                </div>
+            </aside>
+
+            <article>
+                <h2 id="spot-point">최신 개봉</h2>
+                <section id="movie-list">
+                    <div>
+                        <a href="https://www.lottecinema.co.kr/NLCHS/Movie/MovieDetailView?movie=22577" target="_blank">
+                        <img src="https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202506/22577_201_1.jpg" alt="하이파이브">
+                        <span>하이파이브</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.lottecinema.co.kr/NLCHS/Movie/MovieDetailView?movie=22395" target="_blank">
+                        <img src="https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202505/22395_201_1.jpg" alt="미션 임파서블:파이널 레코닝">
+                        <span>미션 임파서블:파이널 레코닝</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.lottecinema.co.kr/NLCHS/Movie/MovieDetailView?movie=22579" target="_blank">
+                        <img src="https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202506/22579_201_1.jpg" alt="소주전쟁">
+                        <span>소주전쟁</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.lottecinema.co.kr/NLCHS/Movie/MovieDetailView?movie=22552" target="_blank">
+                        <img src="https://cf.lottecinema.co.kr//Media/MovieFile/MovieImg/202505/22552_201_1.jpg" alt="릴로 & 스티치">
+                        <span>릴로 & 스티치</span>
+                        </a>
+                    </div>
+                </section>
+
+                <h2 id="gosoon-pick-title">GoSoon's Pick Top 4</h2>
+                <section id="gosoon-pick">
+                    <div class="gosoon-card">
+                        <img src="https://i.namu.wiki/i/6_qSjv0ZLSZn_dEghgYLhWpIGdFLW5zQZv3ZRD1LHc_0o3o3nn3PctEP77zCilRNlVYNXOOX5dzlCq1VUtx3qHk6QuiWoig-ZshDH5-_LBRhqNwjVSIF3MF9ZdH6JNpijgyrOh0ogkMCp_laBTg3Tg.webp" alt="어벤져스: 앤드게임">
+                        <span class="title">어벤져스: 앤드게임</span>
+                        <span class="year">(2019)</span>
+                        <span class="info" style="display:none;">인피니티 워 이후 절반만 살아남은 지구 마지막 희망이 된 어벤져스 먼저 떠난 그들을 위해 모든 것을 걸었다! 위대한 어벤져스 운명을 바꿀 최후의 전쟁이 펼쳐진다!</span>
+                        <a class="more" href="https://namu.wiki/w/%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4:%20%EC%97%94%EB%93%9C%EA%B2%8C%EC%9E%84" style="display:none;"></a>
+                    </div>
+                    <div class="gosoon-card">
+                        <img src="https://i.namu.wiki/i/O1Hc3DVyg8l9bXPa5--qPM4z9SGj2K15ATu3qAjpKMb8UxFoXySmSjI8i3eMRZDJJ0tz9dOxGlD04DDBmqymUBRGPJq6x-PBP1PObg0v2vGJsWg5QX9kk7wF7KecxQ8q0CH-PSs4NehlVTcemtaJSg.webp" alt="어벤져스: 인피니티 워">
+                        <span class="title">어벤져스: 인피니티 워</span>
+                        <span class="year">(2018)</span>
+                        <span class="info" style="display:none;">새로운 조합을 이룬 어벤져스, 역대 최강 빌런 타노스에 맞서 세계의 운명이 걸린 인피니티 스톤을 향한 무한 대결이 펼쳐진다! 마블의 클라이맥스를 목격하라!</span>
+                        <a class="more" href="https://namu.wiki/w/%EC%96%B4%EB%B2%A4%EC%A0%B8%EC%8A%A4:%20%EC%9D%B8%ED%94%BC%EB%8B%88%ED%8B%B0%20%EC%9B%8C" style="display:none;"></a>
+                    </div>
+                    <div class="gosoon-card">
+                        <img src="https://i.namu.wiki/i/ZTAeC-ZBIo76c4gIfViYPKKA7nsJuS5KajdpEYiHZprFO7sSGOyPDQoTY9h3W_IiO-8B0n6V-RTAJ3vY2ny1amAKAYOet-RCa5jRVSRZAeqYv7Scsu8wlJkb8FDA6hEI9rzdyWksqL64Cs69zSM41g.webp" alt="범죄도시 4 포스터">
+                        <span class="title">범죄도시 4</span>
+                        <span class="year">(2024)</span>
+                        <span class="info" style="display:none;">마석도와 새로운 악당의 충돌, 통쾌한 액션 대폭발!</span>
+                        <a class="more" href="https://namu.wiki/w/%EB%B2%94%EC%A3%84%EB%8F%84%EC%8B%9C4" style="display:none;"></a>
+                    </div>
+                    <div class="gosoon-card">
+                        <img src="https://i.namu.wiki/i/QzzAdRBXGcFweT6cFMZTyYBkyVgYDHVO_AdnptQ3zex0lw6ydpzxcz4WJh-X3rI2ZlOyskeRPVg9ddxFmr1eU3E_uJYhufFfQ8NOfQ90W_ErgZEtU_q9_0T5ldLAAsUfmoHw6e8YG7dPyPr3SAieOA.webp" alt="듄: 파트2 포스터">
+                        <span class="title">듄: 파트2</span>
+                        <span class="year">(2024)</span>
+                        <span class="info" style="display:none;">모래폭풍 속 예언의 전사, 운명을 바꿀 전쟁이 펼쳐진다.</span>
+                        <a class="more" href="https://namu.wiki/w/%EB%93%84:%20%ED%8C%8C%ED%8A%B8%202" style="display:none;"></a>
+                    </div>
+                </section>
+            </article>
+            
+            <aside class="right-empty"></aside>
+        </main>
+        <!-- GoSoon's Pick 상세 모달 -->
+        <div id="gosoon-modal" style="display:none;">
+        <div class="modal-bg"></div>
+        <div class="modal-content">
+            <span id="gosoon-modal-close" class="modal-close">&times;</span>
+            <div id="gosoon-modal-body">
+            <!-- JS로 내용이 동적으로 들어감 -->
+            </div>
+        </div>
+        </div>
+        <footer>
+            <p>© 2025 CINEMATE. All rights reserved.</p>
+            <p>
+                문의 :
+                <a href="https://instagram.com/gosoon_96" target="_blank" style="color:rgb(255, 255, 255); text-decoration:none; font-weight:bold;">
+                    @gosoon_96
+                </a>
+                <span> | 010.7737.1379</span>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

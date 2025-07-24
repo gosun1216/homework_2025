@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#pokemon-info {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+}
+
+#insert-btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+table th {
+  text-align: center;
+}
